@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/Movies"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <fragment
+        android:id="@+id/Movies"
+        android:name="com.example.myapplication.fragment.movies.list.MoviesFragment"
+        android:label="First Page"
+        tools:layout="@layout/activity_main">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/MovieDetail"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/MovieDetail"
+        android:name="com.example.myapplication.fragment.movies.detail.DetailFragment"
+        android:label="Detail Page"
+        tools:layout="@layout/fragment_detail">
+    </fragment>
+</navigation>

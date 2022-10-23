@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragment.movies.detail.DetailFragment"
+    android:orientation="vertical"
+    android:id="@+id/detail_movie">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+            <include
+                layout="@layout/movie_detail_info"
+                android:id="@+id/detail_info"
+            />
+            <include
+                android:id="@+id/trailer_list"
+                layout="@layout/trailer_list" />
+            <include
+                layout="@layout/image_related_list"
+                android:id="@+id/image_list"
+            />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

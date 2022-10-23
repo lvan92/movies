@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Movies</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="detail_title">Detail Screen</string>
+    <string name="list_title">List Screen</string>
+    <string name="features">Featured</string>
+    <string name="poster_description">poster</string>
+    <string name="images">Images</string>
+    <string name="trailer">Trailers</string>
+</resources>
